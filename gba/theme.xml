@@ -1,0 +1,75 @@
+<theme>
+	<formatVersion>4</formatVersion>
+	<include>./../theme.xml</include>
+
+	<view name="system">
+		<image name="logo">
+			<path>./_inc/background.jpg</path>
+		</image>
+	</view>
+	
+	<view name="basic, detailed, video">
+		<image name="logo">
+			<path>./_inc/system.svg</path>
+		</image>
+	</view>
+
+	<view name="detailed, video"> 		
+		<textlist name="gamelist">
+			<size>0.2864 0.3657</size>
+			<pos>0.2773 0.5116</pos>
+		</textlist>
+				
+   		<image name="bezel" extra="true">
+			<path>./_inc/bezel_detailed.png</path>
+		</image>
+		
+		<image name="md_image">		
+			<pos>1 1</pos>
+			<origin>0 0</origin>
+			<maxSize>0.21875 0.38888</maxSize>
+			<rotation>0</rotation>
+		</image>
+		
+		<image name="md_marquee">
+			<pos>0.8211 0.2620</pos>
+			<origin>0.5 0.5</origin>
+			<maxSize>0.265625 0.333333</maxSize>
+		</image>
+		
+		<text name="
+			md_lbl_rating,
+			md_lbl_releasedate,
+			md_lbl_developer, md_developer,
+			md_lbl_publisher, md_publisher,
+			md_lbl_genre, md_genre,
+			md_lbl_players, md_players,
+			md_description
+			">		
+				<pos>0.6875 0.4722</pos>
+				<color>2c2c2c</color>
+		</text>			
+			<rating name="md_rating">			
+				<pos>0.73 0.4722</pos>
+				<color>2c2c2c</color>
+				</rating>
+			<datetime name="md_releasedate">			
+				<pos>0.74375 0.4962</pos>
+				<color>2c2c2c</color>
+				</datetime>
+			<text name="md_description">
+				<color>505050</color>
+				</text>	
+	</view>
+	
+	<feature supported="video">
+      <view name="video">
+		<video name="md_video">
+			<pos>0.2766 0.5116</pos>
+			<maxSize>0.5 0.4046</maxSize>
+			<rotation>10.2</rotation>
+		</video>
+      </view>
+	</feature>
+	
+</theme>
